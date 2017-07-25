@@ -36,6 +36,5 @@ function kiteGame(numberOfKites) {
         if (i%3 != 0 && i%5 != 0)
             answer += String(i) + " ";
     }
-    console.log(answer);
     changeElementText("#answer", answer);
 }
