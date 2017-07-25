@@ -7,7 +7,7 @@ $(document).ready(function() {
     isTrafficJam(50, true);
 
     // Problem 3
-    fareForRide(6, 8, false);
+    fareForRide(3.5, 4, true);
 
     // Problem 4
     // call your problem 4 code here
