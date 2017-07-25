@@ -38,7 +38,6 @@ function countMoney() {
         if (!noteIsValid(notesGiven[i]))
             break;
         sum += notesGiven[i];
-        console.log(sum);
     }
     changeElementText("#noteTotal", String(sum));
 }

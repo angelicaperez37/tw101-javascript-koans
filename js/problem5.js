@@ -33,4 +33,17 @@
      count: 7
  */
 
-// Write your JavaScript here
+function changeElementText(element, answer) {
+    $(element).text(answer);
+}
+
+function formatAd(words) {
+    var combinedWords = [];
+
+    combinedWords = combinedWords.concat(words[0]);
+    combinedWords = combinedWords.concat(words[1].reverse());
+    combinedWords = combinedWords.concat(words[2]);
+
+    changeElementText("#formattedAd", combinedWords.join(" "));
+    changeElementText("#wordCount", combinedWords.length);
+}
