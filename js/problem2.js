@@ -40,8 +40,8 @@ function changeElementText(element, answer) {
 
 function isTrafficJam(numberOfAutoRickshaws, isAfterEightPm) {
     changeElementText("#numberOfRickshaws", numberOfAutoRickshaws);
-    changeElementText("#beforeOrAfter", isAfterEightPm : "after" ? "before");
-    var answer = (numberOfAutoRickshaws > 40 && !isAfterEightPm) : "a" ? "no";
+    changeElementText("#beforeOrAfter", (isAfterEightPm) ? "after" : "before");
+    var answer = (numberOfAutoRickshaws > 40 && !isAfterEightPm) ? "a" : "no";
 
     changeElementText("#aOrNo", answer);
 }
